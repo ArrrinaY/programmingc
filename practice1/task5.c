@@ -9,7 +9,7 @@ int main() {
     printf("Введите фактическую скорость:\n");
     scanf("%lf", &speed);
     
-    double diff = speed - count_speed;
+    double diff = speed - count_speed; // ошибка логиги/арифметики в задаче
     
     if (diff <= 0.1)
         printf("Орбита стабильна\n");
