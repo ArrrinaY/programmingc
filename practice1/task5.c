@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include <math.h>
 
 int main() {
     double count_speed;
@@ -11,7 +12,7 @@ int main() {
     
     double diff = speed - count_speed;
     
-    if (diff <= 0.1)
+    if (fabs(diff) <= 0.1)
         printf("Орбита стабильна\n");
     else
         printf("Орбита нестабильна\n");
