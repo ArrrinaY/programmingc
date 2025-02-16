@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 struct Date {
     int day;
@@ -16,7 +17,7 @@ int main() {
     int count_event;
     printf("Введите количество событий\n");
     scanf("%d", &count_event);
-    struct Event events[count_event];
+    struct Event *events = (struct Event*) malloc(sizeof(struct Event) * count_event);
 
     for (int i = 0; i < count_event; i++) {
         printf("Введите информацию о событии: \n");
@@ -26,6 +27,6 @@ int main() {
     for (int i = 0; i < count_event; i++) {
         printf("Event: %s\nDate: %d/%d/%d\nDescription: %s\n\n", events[i].name, events[i].date.day, events[i].date.month, events[i].date.year, events[i].description);
     }
-
+    free(events)
     return 0;
 }
