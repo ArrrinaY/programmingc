@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 enum Condition {Sunny, Cloudy, Rainy};
 struct Weather {

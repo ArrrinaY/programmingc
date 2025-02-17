@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 union Grade {
-     int num;
+    int num;
     char letter;
 };
 
