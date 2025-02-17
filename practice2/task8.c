@@ -25,5 +25,6 @@ int main() {
             printf("Grade: %c\n", grade[i].letter);
         }
     }
-
+    
+    return 0;
 }
